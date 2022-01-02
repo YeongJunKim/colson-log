@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/landscape">
+        <file>resources/바다.jpeg</file>
+    </qresource>
+    <qresource prefix="/ui"/>
+</RCC>
