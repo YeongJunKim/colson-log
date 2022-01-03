@@ -1,9 +1,12 @@
 /**
- * @author colson
- * @email dud3722000@naver.com
- * @create date 2022-01-03 23:49:34
- * @modify date 2022-01-03 23:49:34
- * @desc [main.c]
+ * @file main.c
+ * @author colson (dud3722000@naver.com)
+ * @brief {This file for...}
+ * @version 0.1
+ * @date 2022-01-03
+ * 
+ * @copyright Copyright (c) 2022
+ * 
  */
 
 #include <test1.h>
