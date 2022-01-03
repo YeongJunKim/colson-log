@@ -21,9 +21,9 @@ private:
     Ui::MainWindow *ui;
 
 private slots:
-    void getMessage(QString message);
-
     void on_pushButton_signal_clicked();
+
+    void getMessage(QString message);
 
 signals:
     void sendMessage(QString message);
