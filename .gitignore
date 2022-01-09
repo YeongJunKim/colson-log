@@ -54,3 +54,4 @@ compile_commands.json
 *build/
 .DS_Store
 qt/.DS_Store
+.vscode
