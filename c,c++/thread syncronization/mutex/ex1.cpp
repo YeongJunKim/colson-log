@@ -12,7 +12,7 @@
 #include <thread>
 #include <mutex>
 #include <iostream>
-    
+
 int g_i = 0;
 std::mutex g_i_mutex;  // protects g_i
     
