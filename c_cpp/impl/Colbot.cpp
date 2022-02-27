@@ -11,11 +11,18 @@
 
 #include "Colbot.h"
 
+#include "PacketHandler.h"
+#include "Serial.h"
+
+
+Colbot::Colbot(PacketHandler &packetHandler, SerialHandler &serialHandler)
+{
+    packetHandlerImpl = std::make_unique<PacketHandler>(packetHandler);
+}
 uint16_t Colbot::getProtocolVersion()
 {
     return packetHandlerImpl->getVersion();
 }
-
 bool Colbot::reset()
 {
     std::cout << "reset" << std::endl;
