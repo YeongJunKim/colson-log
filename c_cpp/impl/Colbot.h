@@ -4,7 +4,8 @@
  * @brief {This file for...}
  * @version 0.1
  * @date 2022-02-26
- *
+ * @ref https://grayt.tistory.com/66
+ * @ref https://ozt88.tistory.com/32
  * @copyright Copyright (c) 2022
  *
  */
@@ -33,6 +34,10 @@ class Colbot
     std::unique_ptr<PacketHandler> packetHandlerImpl;
     std::unique_ptr<SerialHandler> serialHandlerImpl;
 
+  private:
+    struct ColbotData;
+    /* https://ozt88.tistory.com/32 : unique_ptr을 사용하면 에러가 남 */
+    std::shared_ptr<ColbotData> _colbotDataImpl;
 };
 
 #endif /* __COLBOT__ */

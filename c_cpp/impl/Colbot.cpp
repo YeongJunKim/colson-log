@@ -13,9 +13,14 @@
 
 #include "PacketHandler.h"
 #include "Serial.h"
+#include <memory>
 
 
-Colbot::Colbot(PacketHandler &packetHandler, SerialHandler &serialHandler)
+struct Colbot::ColbotData{
+    int data;
+};
+
+Colbot::Colbot(PacketHandler &packetHandler, SerialHandler &serialHandler) : _colbotDataImpl(std::make_shared<ColbotData>())
 {
     packetHandlerImpl = std::make_unique<PacketHandler>(packetHandler);
 }
@@ -25,6 +30,7 @@ uint16_t Colbot::getProtocolVersion()
 }
 bool Colbot::reset()
 {
+    _colbotDataImpl->data = 0;
     std::cout << "reset" << std::endl;
     auto packet = packetHandlerImpl->makeResetPacket();
     return serialHandlerImpl->write(packet);
