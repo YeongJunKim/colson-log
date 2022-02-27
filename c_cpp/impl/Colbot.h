@@ -18,11 +18,12 @@
 #include <memory>
 
 class PacketHandler;
+class SerialHandler;
 
 class Colbot
 {
     public:
-        Colbot(PacketHandler packetHandler, SerialHandler serialHandler) {
+        Colbot(PacketHandler &packetHandler, SerialHandler &serialHandler) {
             packetHandlerImpl = std::make_unique<PacketHandler>(packetHandler);
 
         }
