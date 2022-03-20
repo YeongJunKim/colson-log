@@ -1,7 +1,7 @@
 /**
  * @file deque-1.cpp
  * @author colson (dud3722000@naver.com)
- * @brief {This file for...}
+ * @brief baekjoon - 10866
  * @version 0.1
  * @date 2022-03-20
  *

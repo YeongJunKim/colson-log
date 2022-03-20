@@ -1,7 +1,7 @@
 /**
  * @file stack_sequence-1.cpp
  * @author colson (dud3722000@naver.com)
- * @brief {This file for...}
+ * @brief baekjoon - 1874
  * @version 0.1
  * @date 2022-03-19
  *
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
         st.push(i+1);
         vt.push_back('+');
         
-        
+
         
     }
 
