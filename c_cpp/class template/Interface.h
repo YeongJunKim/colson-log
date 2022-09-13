@@ -4,30 +4,27 @@
  * @brief {This file for...}
  * @version 0.1
  * @date 2022-02-22
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 
 #ifndef __INTERFACE__
 #define __INTERFACE__
 
-template <class _implementation>
-class Interface
+template <class _implementation> class Interface
 {
-    public:
-    Interface() {
-        
-    }
+  public:
+    Interface() {}
 
-    private:
+  private:
     _implementation implimentation;
-    public:
-    _implementation& getImplimentation()
+
+  public:
+    _implementation &getImplimentation()
     {
         return implimentation;
     }
 };
-
 
 #endif /* __INTERFACE__ */

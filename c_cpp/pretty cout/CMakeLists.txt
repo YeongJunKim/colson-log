@@ -14,4 +14,5 @@ target_include_directories(${PROJECT_NAME}_ex2 PUBLIC ./)
 
 find_package(Boost COMPONENTS system filesystem REQUIRED)
 add_executable(${PROJECT_NAME}_ex3 ex3.cpp)
-target_link_libraries(${PROJECT_NAME}_ex3 PUBLIC ./ ${Boost_LIBRARIES})
+target_include_directories(${PROJECT_NAME}_ex3 PUBLIC ./)
+target_link_libraries(${PROJECT_NAME}_ex3 PUBLIC ${Boost_LIBRARIES})
